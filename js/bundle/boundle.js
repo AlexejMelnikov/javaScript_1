@@ -656,7 +656,7 @@ function calc() {
 
     total = (daysSum + personsSumm) * 4000;
 
-    if (persons.value == "" || restDays.value == "") {
+    if (persons.value == "" || restDays.value == "" || persons.value == 0 || restDays.value == 0) {
       totalValue.innerHTML = 0;
     } else {
       totalValue.innerHTML = total;
