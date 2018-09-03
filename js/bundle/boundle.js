@@ -667,7 +667,7 @@ function calc() {
     var regExp = new RegExp(/\d+/g),
         inp = parseInt(restDays.value, 10);
 
-    if ((inp + "").indexOf('e') || !!(restDays.value + "").match(regExp)) {
+    if ((inp + "").indexOf('e') || !!(restDays.value + "")|| restDays.value == 0) {
       totalValue.innerHTML = 0; // console.log(restDays.value);
     }
 
