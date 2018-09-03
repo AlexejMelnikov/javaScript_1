@@ -685,7 +685,7 @@ function calc() {
   place.addEventListener('change', function () {
     place.value == NaN ? total = 0 : total = total;
 
-    if (persons.value == "" || restDays.value == "") {
+    if (persons.value == 0 ||persons.value == "" || restDays.value == ""  || restDays.value == 0) {
       totalValue.innerHTML = 0;
     } else {
       var a = total;
